@@ -1,0 +1,15 @@
+<suite name="Hotwire Web test Suite with Chrome Browser" verbose="1">
+    <!-- This parameter will be passed to every test in this suite -->
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="webURL" value="http://www.hotwire.com/"/>
+    <parameter name="headLess" value="true"/>
+    <test name="Parameter Test one">
+        <classes>
+            <class name="com.aera.hotwire.test.HotwireTest">
+                <methods>
+                    <include name="searchResult" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
